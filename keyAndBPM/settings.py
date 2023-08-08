@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-k)y@hw--igrhy&q_5kf53-)=v)#k4z9%qw=536v=v#yxekikq_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['scraps-bpm.onrender.com',]
 
 
 # Application definition
