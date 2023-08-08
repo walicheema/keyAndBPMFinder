@@ -18,9 +18,19 @@ from django.contrib import admin
 from django.urls import path
 from myapp.views import get_tempo, get_key
 from myapp import views
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
 
+@api_view(['POST'])
+def default(request):
+     return Response("Reached endpoint")
+ 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('get_tempo/', get_tempo, name= 'get_tempo'),
+    path('', default, name= 'default'),
     path('get_key/', get_key, name='get_key'),
 ]
+
+
+    

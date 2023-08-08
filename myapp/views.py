@@ -56,7 +56,6 @@ def get_key(request):
         wav_file.setframerate(44100)
         wav_file.writeframes(response.content)
         wav_file.close()
-
         # Load the audio data from the .wav file
         y, sr = librosa.load('my_audio.wav', sr=44100, mono=True)
 
